@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Liste de Courses - Tailwind CSS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Lien vers le fichier CSS compilé -->
   <link rel="stylesheet" href="output.css">
 </head>
 <body class="bg-gray-100">
@@ -19,41 +18,49 @@
   <!-- Barre de navigation -->
   <nav class="bg-white shadow">
     <div class="container mx-auto px-6 py-4 flex space-x-4">
-      <a href="#" class="text-gray-600">Accueil</a>
-      <a href="#" class="text-gray-600">Produits</a>
-      <a href="#" class="text-gray-600">Contact</a>
+      <a href="#" class="text-gray-600 hover:text-yellow-400" aria-label="Accueil">Accueil</a>
+      <a href="#" class="text-gray-600 hover:text-yellow-400 " aria-label="Produits">Produits</a>
+      <a href="#" class="text-gray-600 hover:text-yellow-400 " aria-label="Contact">Contact</a>
     </div>
   </nav>
 
   <!-- Contenu principal -->
-  <main >
+  <main class="container mx-auto p-6">
     <!-- Carte -->
-    <div >
-      <h2 >Liste de Courses</h2>
-      <ul >
-        <li >
+    <div class="bg-white rounded-lg shadow p-9">
+      <h2 class="font-bold text-xl mb-4">Liste de Courses</h2>
+      <ul class="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <li class="bg-zinc-200 px-4 py-2 rounded-md shadow flex justify-between hover:bg-zinc-300
+        hover:scale-110 hover:shadow-lg">
           <span>Œufs</span>
           <span>12</span>
         </li>
-        <li >
+        <li class="bg-zinc-200 px-4 py-2 rounded-md shadow flex justify-between hover:bg-zinc-300 hover:scale-110 hover:shadow-lg">
           <span>Pommes de terre</span>
           <span>5 kg</span>
         </li>
-        <li >
+        <li class="bg-zinc-200 px-4 py-2 rounded-md shadow flex justify-between hover:bg-zinc-300 hover:scale-110 hover:shadow-lg">
           <span>Lait</span>
           <span>2 litres</span>
         </li>
-        <li >
+        <li class="bg-zinc-200 px-4 py-2 rounded-md shadow flex justify-between hover:bg-zinc-300 hover:scale-110 hover:shadow-lg">
           <span>Pain</span>
           <span>1</span>
         </li>
-        <li >
+        <li class="bg-zinc-200 px-4 py-2 rounded-md shadow flex justify-between hover:bg-zinc-300 hover:scale-110 hover:shadow-lg">
           <span>Fromage</span>
           <span>200 g</span>
         </li>
       </ul>
     </div>
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-4">
+    <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+      &copy; 2024 Mes Listes. Tous droits réservés.
+    </div>
+  </footer>
 
 </body>
 </html>
